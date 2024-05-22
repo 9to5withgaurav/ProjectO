@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AuthVerificationScreen">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/verify_otp"
+        style="@style/bold_style"
+        android:layout_above="@id/subTitle"
+        />
+
+    <TextView
+        android:id="@+id/subTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/otpSubtitle"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:layout_above="@id/pin"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/inriasans_regular"
+        />
+
+    <com.chaos.view.PinView
+        android:id="@+id/pin"
+        app:itemCount="6"
+        app:itemWidth="50dp"
+        app:itemHeight="50dp"
+        android:gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:itemBackground="@color/white"
+        android:layout_gravity="center"
+        android:inputType="number"
+        android:cursorVisible="true"
+        app:hideLineWhenFilled="false"
+        app:itemRadius="10dp"
+        style="@style/PinWidget.PinView"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:id="@+id/verify_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/btn_style"
+        android:text="@string/verify_btn"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+
+</RelativeLayout>

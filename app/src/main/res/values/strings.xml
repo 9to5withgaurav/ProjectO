@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">ProjectO</string>
+    <string name="help">Help</string>
+    <string name="help_des">Help</string>
+    <string name="snackbar_msg">this is hint msg.</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="greeting_msg">Hey Admin,\n Welcome to home screen</string>
+    <string-array name="pass_status">
+        <item>Your Pass %s</item>
+        <item>Your Pass Valid Upto %s </item>
+
+    </string-array>
+    <string name="get_pass_btn_text">Get Pass</string>
+    <string name="code_share_title">
+        Here is your code now share and enjoy
+    </string>
+    <string name="random_code">345678</string>
+    <string name="code_info">
+        This code update in
+        every 30:00 min
+    </string>
+    <string name="refresh_btn">Refresh</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="redeem">Redeem</string>
+    <string name="redeem_title">Get redeem your Invitation code</string>
+    <string name="get_redeem">Get Redeem</string>
+    <string name="redeem_hint">Enter Redeem Code</string>
+    <string name="update_info">Get update your profile info</string>
+    <string name="update_btn">Update</string>
+    <string name="verify_otp">Get verify your otp</string>
+    <string name="verify_btn">Verify</string>
+    <string name="phone_hint">Enter Mobile No.</string>
+    <string name="otp_hint">Enter Otp</string>
+    <string name="passUse">Use Pass</string>
+    <string name="back">Back</string>
+    <string name="invitation_msg">Get redeem your invitation code</string>
+    <string name="dog_park">Stray-friendly park campaign</string>
+    <string name="continueBtn">Continue</string>
+    <string name="login_msg">Login or SignUp</string>
+    <string name="countryCode">+91</string>
+    <string name="otpSubtitle">Enter the OTP sent to +91 - %s</string>
+    <string name="resend_code">Resend Code</string>
+    <string name="otp_placeholder">000000</string>
+
+</resources>
