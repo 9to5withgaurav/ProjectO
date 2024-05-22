@@ -15,3 +15,8 @@ I'm incredibly passionate about "ProjectO" and its potential to make a meaningfu
 **#ProjectO #ChangePerceptions #DogAdoptionRevolution**
 
 [Link to ProjectO](https://lnkd.in/eUjuFs3y)
+
+
+🔹 **Project Update (22-05-2024):** 
+
+**Enable Login feature:** We are glad to inform you that we have added a user-friendly login system to our app, built on the Firebase platform. As beginners, it was challenging for us to choose the type of login system that is both easy to use and intuitive for users. Since our app is designed for mobile devices, OTP login seemed perfect for us. However, it was challenging to implement due to some deprecated APIs. Nonetheless, we have been working tirelessly, 24/7, to fix our bugs, and we have successfully added this functionality.
