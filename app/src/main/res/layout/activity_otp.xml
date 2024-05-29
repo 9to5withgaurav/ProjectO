@@ -4,7 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".AuthVerificationScreen">
+    tools:context=".OtpActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignTop="@id/title"
+        />
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -22,7 +30,7 @@
         android:layout_height="wrap_content"
         android:text="@string/otpSubtitle"
         android:textStyle="normal"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:layout_above="@id/pin"
         android:layout_margin="10dp"
         android:fontFamily="@font/inriasans_regular"
@@ -46,6 +54,28 @@
         style="@style/PinWidget.PinView"
         android:layout_centerInParent="true"
         />
+
+    <TextView
+        android:id="@+id/resendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resend_code"
+        style="@style/smallText_style"
+        android:layout_below="@id/pin"
+        android:layout_alignParentEnd="true"
+        android:clickable="true"
+        android:enabled="false"
+        />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/smallText_style"
+        android:layout_below="@id/pin"
+        android:layout_alignParentStart="true"
+        />
+
     <Button
         android:id="@+id/verify_btn"
         android:layout_width="match_parent"
