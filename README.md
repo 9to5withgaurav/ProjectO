@@ -20,3 +20,9 @@ I'm incredibly passionate about "ProjectO" and its potential to make a meaningfu
 🔹 **Project Update (22-05-2024):** 
 
 **Enable Login feature:** We are glad to inform you that we have added a user-friendly login system to our app, built on the Firebase platform. As beginners, it was challenging for us to choose the type of login system that is both easy to use and intuitive for users. Since our app is designed for mobile devices, OTP login seemed perfect for us. However, it was challenging to implement due to some deprecated APIs. Nonetheless, we have been working tirelessly, 24/7, to fix our bugs, and we have successfully added this functionality.
+
+🔹 **Project Update (30-05-2024):** 
+
+**Add Resend Code feature:** We're excited to announce the latest addition to our login experience - the Resend Code feature!
+After days of dedicated effort, we've integrated a seamless Resend Code functionality into our login screen, powered by Firebase OTP Authentication. Now, users can effortlessly request a new verification code if they haven't received it or if their previous code has expired.
+
