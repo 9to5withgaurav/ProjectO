@@ -9,20 +9,26 @@
         android:id="@+id/background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@id/title"
-        android:layout_centerInParent="true"
+        android:layout_above="@id/divider"
         android:scaleType="centerCrop"
         android:src="@drawable/background_paws" />
 
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:dividerColor="@color/white"
+        />
+
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:minHeight="50dp"
-        android:minWidth="50dp"
-        android:src="@drawable/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_centerInParent="true"
-        />
+        android:minWidth="50dp"
+        android:minHeight="50dp"
+        android:src="@drawable/logo" />
 
     <TextView
         android:id="@+id/title"
@@ -43,6 +49,7 @@
         android:textAlignment="center"
         android:textStyle="normal"
         android:layout_above="@id/phoneInput"
+        android:layout_below="@id/logo"
         />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -61,6 +68,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
+            android:maxLength="10"
             />
 
     </com.google.android.material.textfield.TextInputLayout>

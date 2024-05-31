@@ -18,3 +18,7 @@ enum class Status{
 enum class Times{
     Morning,Afternoon,Evening,Night
 }
+
+enum class Network{
+    Available , Lost , Default
+}

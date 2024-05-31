@@ -2,6 +2,7 @@ package com.example.projecto
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.widget.Button
@@ -55,12 +56,14 @@ class OtpActivity : AppCompatActivity() {
         }
 
         verifyBtn.setOnClickListener {
-
+            val getPin = pinInput.text.toString()
+            Log.d("PIN",getPin)
             if (verificationId != null){
-                val getPin = pinInput.text.toString()
-                val credential = PhoneAuthProvider.getCredential(verificationId!!,getPin)
-                signInWithPhoneAuthCredential(credential,snackBarViw)
-            }
+
+                    val credential = PhoneAuthProvider.getCredential(verificationId!!, getPin)
+                    signInWithPhoneAuthCredential(credential, snackBarViw)
+                  }
+
         }
 
     }
