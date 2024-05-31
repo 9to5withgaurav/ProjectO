@@ -26,3 +26,6 @@ I'm incredibly passionate about "ProjectO" and its potential to make a meaningfu
 **Add Resend Code feature:** We're excited to announce the latest addition to our login experience - the Resend Code feature!
 After days of dedicated effort, we've integrated a seamless Resend Code functionality into our login screen, powered by Firebase OTP Authentication. Now, users can effortlessly request a new verification code if they haven't received it or if their previous code has expired.
 
+🔹 **Project Update (01-06-2024):** 
+
+**Network CallBack feature:** We are glad to inform you that we have added a network callback feature to our app. If a user loses their internet connection, they will now receive an alert, helping them to enable their internet before accessing the login screen.
