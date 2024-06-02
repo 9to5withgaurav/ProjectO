@@ -2,11 +2,14 @@ package com.example.projecto
 
 import android.content.Intent
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import com.chaos.view.PinView
@@ -42,7 +45,7 @@ class OtpActivity : AppCompatActivity() {
         val pinInput = findViewById<PinView>(R.id.pin)
         auth = FirebaseAuth.getInstance()
         val snackBarViw = findViewById<CoordinatorLayout>(R.id.coordinateView)
-        val verifyBtn = findViewById<Button>(R.id.verify_btn)
+
          resendBtn = findViewById(R.id.resendCode)
 
         val subtitle = findViewById<TextView>(R.id.subTitle)
@@ -55,16 +58,24 @@ class OtpActivity : AppCompatActivity() {
             sendOtp(getMobile,snackBarViw)
         }
 
-        verifyBtn.setOnClickListener {
-            val getPin = pinInput.text.toString()
-            Log.d("PIN",getPin)
-            if (verificationId != null){
+        pinInput.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
 
-                    val credential = PhoneAuthProvider.getCredential(verificationId!!, getPin)
-                    signInWithPhoneAuthCredential(credential, snackBarViw)
-                  }
+            }
 
-        }
+            override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+               if(s != null && s.length == 6 && verificationId != null){
+                    Log.i(TAG,s.toString())
+                   val credential = PhoneAuthProvider.getCredential(verificationId!!,s.toString())
+                   signInWithPhoneAuthCredential(credential, snackBarViw)
+               }
+            }
+
+        })
 
     }
 
