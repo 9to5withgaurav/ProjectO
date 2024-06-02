@@ -29,3 +29,16 @@ After days of dedicated effort, we've integrated a seamless Resend Code function
 🔹 **Project Update (01-06-2024):** 
 
 **Network CallBack feature:** We are glad to inform you that we have added a network callback feature to our app. If a user loses their internet connection, they will now receive an alert, helping them to enable their internet before accessing the login screen.
+
+🔹 Project Update (02-06-2024):
+
+**New Launcher Icon:** We are thrilled to announce the addition of a new launcher icon to our app! This icon has been thoughtfully designed to embody the essence of our brand and enhance the app's visual appeal.
+
+🔹 Project Update (02-06-2024):
+
+**Improved Login Otp:** We have enhanced the user experience for OTP verification in our app by removing the manual verification button. Instead, we have introduced a callback mechanism that automatically triggers once the user completes entering the OTP. 
+This improvement streamlines the login process, making it more convenient and efficient for users. With this new feature, users no longer need to press a button to submit their OTP; the app now handles the submission automatically, providing a smoother and more intuitive login experience.
+
+
+
+
