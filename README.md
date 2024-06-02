@@ -39,5 +39,7 @@ After days of dedicated effort, we've integrated a seamless Resend Code function
 **Improved Login Otp:** We have enhanced the user experience for OTP verification in our app by removing the manual verification button. Instead, we have introduced a callback mechanism that automatically triggers once the user completes entering the OTP. 
 This improvement streamlines the login process, making it more convenient and efficient for users. With this new feature, users no longer need to press a button to submit their OTP; the app now handles the submission automatically, providing a smoother and more intuitive login experience.
 
+🔹 More Updates Coming Soon:
+
 
 
