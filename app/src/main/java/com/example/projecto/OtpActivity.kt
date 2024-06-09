@@ -1,5 +1,6 @@
 package com.example.projecto
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
@@ -12,6 +13,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.coordinatorlayout.widget.CoordinatorLayout
+import androidx.core.os.bundleOf
 import com.chaos.view.PinView
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.FirebaseException
@@ -145,7 +147,15 @@ class OtpActivity : AppCompatActivity() {
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
                     val user = task.result?.user
+                    val sharedPref = getSharedPreferences("userID",Context.MODE_PRIVATE)
+                    with(sharedPref.edit()){
+                        putString(KEY,"${user?.uid}")
+                        apply()
+                    }
+
+                    val bundle = bundleOf("auth" to "${user?.uid}")
                     val intent = Intent(this,MainActivity::class.java)
+                    intent.putExtras(bundle)
                     try {
                         startActivity(intent)
                     }catch (e:Exception){

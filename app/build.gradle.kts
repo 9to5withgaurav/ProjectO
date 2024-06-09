@@ -42,6 +42,16 @@ android {
 
 dependencies {
 
+    val nav_version = "2.7.7"
+    // Kotlin
+    implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+    implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
+    // Feature module Support
+    implementation("androidx.navigation:navigation-dynamic-features-fragment:$nav_version")
+
+    // Testing Navigation
+
     implementation("io.github.chaosleung:pinview:1.4.4")
 
         // Import the BoM for the Firebase platform

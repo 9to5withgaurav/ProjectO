@@ -85,5 +85,17 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="htu">How to Use</string>
+    <string name="htu_A">Scan the QR code</string>
+    <string name="htu_B">Now! Enjoy your happiest moment</string>
+    <string name="ok">Ok</string>
+    <string name="hi">👋 Hi</string>
+    <string name="notification">notification</string>
+    <string name="donate">donate</string>
+    <string name="hint_state">This view show the status about current activity.</string>
+    <string-array name="activityStatus">
+        <item>No running activity found</item>
+        <item>One activity found running</item>
+    </string-array>
 
 </resources>

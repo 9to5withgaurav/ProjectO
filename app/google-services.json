@@ -1,1 +1,29 @@
-<!-- Add your code here -->
+{
+  "project_info": {
+    "project_number": "995936166001",
+    "project_id": "projecto-12992",
+    "storage_bucket": "projecto-12992.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995936166001:android:24e473a7d96aa84e09bbd0",
+        "android_client_info": {
+          "package_name": "com.example.projecto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB-2FLjk65LSkb-O_XrIO1tn2H5LwhkpKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
