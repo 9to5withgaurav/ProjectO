@@ -6,6 +6,7 @@
         <item name="android:textStyle">bold</item>
         <item name="android:fontFamily">@font/inriasans_regular</item>
         <item name="android:color">@color/black</item>
+
     </style>
 
     <style name="btn_style">
@@ -13,8 +14,8 @@
         <item name="android:padding">10dp</item>
         <item name="android:textStyle">normal</item>
         <item name="android:fontFamily">@font/inriasans_regular</item>
-        <item name="android:color">@color/white</item>
-        <item name="android:backgroundTint">@color/black</item>
+        <item name="android:textColor">#020202</item>
+        <item name="android:backgroundTint">@color/yellow</item>
         <item name="android:layout_margin">20dp</item>
     </style>
 
@@ -31,6 +32,11 @@
         <item name="android:inputType">none</item>
         <item name="android:maxLines">1</item>
         <item name="android:textAppearance">@font/inriasans_bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:background">@color/yellow</item>
+        <item name="boxStrokeColor">@color/black</item>
+
+
     </style>
 
     <style name="pinView_style">
@@ -53,5 +59,7 @@
         <item name="android:color">@color/black</item>
         <item name="android:layout_margin">10dp</item>
     </style>
+
+
 
 </resources>

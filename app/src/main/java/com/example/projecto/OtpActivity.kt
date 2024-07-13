@@ -41,7 +41,7 @@ class OtpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_otp)
         var getMobile = intent.getStringExtra(MOBILE)
-        getMobile = "+1$getMobile"
+        getMobile = "+91$getMobile"
 
 
         val pinInput = findViewById<PinView>(R.id.pin)
@@ -71,7 +71,6 @@ class OtpActivity : AppCompatActivity() {
 
             override fun afterTextChanged(s: Editable?) {
                if(s != null && s.length == 6 && verificationId != null){
-                    Log.i(TAG,s.toString())
                    val credential = PhoneAuthProvider.getCredential(verificationId!!,s.toString())
                    signInWithPhoneAuthCredential(credential, snackBarViw)
                }

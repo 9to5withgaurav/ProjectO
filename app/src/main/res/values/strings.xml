@@ -39,7 +39,7 @@
     <string name="continueBtn">Continue</string>
     <string name="login_msg">Login or SignUp</string>
     <string name="countryCode">+91</string>
-    <string name="otpSubtitle">Enter the OTP sent to +91 - %s</string>
+    <string name="otpSubtitle">Enter the OTP sent to - +%s</string>
     <string name="resend_code">Resend Code</string>
     <string name="otp_placeholder">000000</string>
     <string name="title_activity_otp">OtpActivity</string>
@@ -97,5 +97,18 @@
         <item>No running activity found</item>
         <item>One activity found running</item>
     </string-array>
+
+    <string-array name="spinner">
+        <item>morning</item>
+        <item>Evening</item>
+    </string-array>
+
+    <string-array name="slots">
+        <item>07:00am to 12:00am (morning)</item>
+        <item>04:00pm to 07:00pm (Evening)</item>
+    </string-array>
+
+    <string name="sponsor_info"> %s sponsor food may discontinue in future pls sponsor him/her</string>
+    <string name="donate_msg">Donate Rs %f1</string>
 
 </resources>

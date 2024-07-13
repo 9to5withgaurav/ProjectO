@@ -41,3 +41,13 @@ After days of dedicated effort, we've integrated a seamless Resend Code function
 🔹 **Project Update (10-06-2024):**
 
 **Added Tutorial Screen:** We have recently added a new feature that simplifies accessing our app. 
+
+🔹 **Project Update (14-06-2024):**
+
+**Complete MVP version 1.0:**  "We are excited to inform you that on July 14, 2024, we completed our first MVP version 1.0. In this release, we added multiple features:
+
+1.Added a phone login screen for user authentication.
+2.Showcased curated dog profiles of those needing meal sponsorship.
+3.Introduced a dedicated dog page with shelter information.
+4.Implemented a fill-up form allowing users to add their personal information, including a calendar button for selecting the desired meal delivery date.
+5.Included a confirmation alert box upon successful form submission."

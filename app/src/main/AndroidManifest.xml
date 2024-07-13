@@ -17,6 +17,33 @@
         android:theme="@style/Theme.ProjectO"
         tools:targetApi="31">
         <activity
+            android:name=".TutorialActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SponsorFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PetBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PostInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CreateProfile"
+            android:exported="false" />
+        <activity
+            android:name=".OrderStatus"
+            android:exported="false" />
+        <activity
+            android:name=".CheckingBooking"
+            android:exported="false" />
+        <activity
+            android:name=".BookedOrder"
+            android:exported="false" />
+        <activity
             android:name=".HelpActivity"
             android:exported="false" />
         <activity

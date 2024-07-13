@@ -41,7 +41,13 @@ android {
 }
 
 dependencies {
-
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation("io.coil-kt:coil:2.6.0")
+    implementation("androidx.cardview:cardview:1.0.0")
+    implementation("com.google.android.gms:play-services-code-scanner:16.1.0")
+    implementation("com.google.mlkit:barcode-scanning:17.2.0")
+    implementation("com.google.android.gms:play-services-tasks:18.2.0")
+    implementation("com.google.android.gms:play-services-maps:18.2.0")
     val nav_version = "2.7.7"
     // Kotlin
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
@@ -61,7 +67,7 @@ dependencies {
         // When using the BoM, you don't specify versions in Firebase library dependencies
         implementation("com.google.firebase:firebase-auth")
         implementation("com.google.firebase:firebase-analytics")
-
+        implementation("com.google.firebase:firebase-firestore")
     implementation("androidx.core:core-ktx:1.13.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
     implementation("com.google.android.material:material:1.11.0")

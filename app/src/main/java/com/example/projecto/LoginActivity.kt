@@ -8,7 +8,6 @@ import android.net.NetworkRequest
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.appcompat.app.AlertDialog
@@ -27,7 +26,6 @@ class LoginActivity : AppCompatActivity() {
         // lost network connection
         override fun onLost(network: Network) {
             super.onLost(network)
-            Log.d(TAG, "Internet Lost")
             status = "Internet Lost ! Please check your connection"
             updateNetworkStatus(status)
         }
@@ -36,7 +34,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        val mobileInput = findViewById<EditText>(R.id.phoneText)
+        val mobileInput = findViewById<EditText>(R.id.phoneInput)
         btn = findViewById<Button>(R.id.continueBtn)
         btn.setOnClickListener {
             getMobileInput = mobileInput.text.toString()

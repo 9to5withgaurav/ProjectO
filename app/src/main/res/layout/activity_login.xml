@@ -51,35 +51,30 @@
         android:layout_below="@id/logo"
         />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/phoneInput"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/continueBtn"
-        android:hint="@string/phone_hint"
-        android:padding="20dp"
-        app:boxStrokeColor="@color/black"
-        app:boxStrokeWidth="5dp">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/phoneText"
+
+        <EditText
+            android:id="@+id/phoneInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:maxLength="10"
+            style="@style/edit_text_style"
+            android:hint="Enter your mobile number"
+            android:layout_above="@id/continueBtn"
             />
-
-    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/continueBtn"
+        style="@style/btn_style"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/btn_style"
-        android:text="@string/continueBtn"
         android:layout_alignParentBottom="true"
-        />
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/continueBtn" />
 
 
 </RelativeLayout>
