@@ -51,3 +51,7 @@ After days of dedicated effort, we've integrated a seamless Resend Code function
 3.Introduced a dedicated dog page with shelter information.
 4.Implemented a fill-up form allowing users to add their personal information, including a calendar button for selecting the desired meal delivery date.
 5.Included a confirmation alert box upon successful form submission."
+
+🔹 **Project Update (25-07-2024):**
+
+**Sponsor List Added** We enable FAB button now user check their sponsor food list 
