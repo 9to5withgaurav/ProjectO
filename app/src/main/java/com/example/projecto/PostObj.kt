@@ -14,3 +14,11 @@ data class PostObj(
 
 )
 
+data class CartObj(
+   val postId:String = "",
+   val userMob:String = "",
+   val beneficiary:MutableList<String>,
+   val sponsorDate:String = "",
+   var paymentStatus:String = ""
+)
+

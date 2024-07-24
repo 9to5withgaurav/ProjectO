@@ -48,8 +48,9 @@ class SponsorFormActivity : AppCompatActivity() {
             if (name.text.isNullOrEmpty() || address.text.isNullOrEmpty() || phone.text.isNullOrEmpty() || dateField.text.isNullOrEmpty()){
                 alertBox("Field can't be empty")
             }else{
+                val randomCode = generateRandomCode(10)
                 val sponsorRequest = hashMapOf(
-                    "sponsorId" to "sponsor0001",
+                    "sponsorId" to randomCode,
                     "name" to name.text.toString(),
                     "address" to address.text.toString(),
                     "phone" to phone.text.toString(),
@@ -107,4 +108,13 @@ class SponsorFormActivity : AppCompatActivity() {
         builder.create()
         builder.show()
     }
+
+    fun generateRandomCode(length: Int): String {
+        val charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        return (1..length)
+            .map { charset.random() }
+            .joinToString("")
+    }
+
+
 }

@@ -41,6 +41,7 @@ android {
 }
 
 dependencies {
+    implementation("in.payu:payu-checkout-pro:2.3.3")
     implementation("de.hdodenhof:circleimageview:3.1.0")
     implementation("io.coil-kt:coil:2.6.0")
     implementation("androidx.cardview:cardview:1.0.0")

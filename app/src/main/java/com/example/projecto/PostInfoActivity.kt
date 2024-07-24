@@ -79,7 +79,7 @@ class PostInfoActivity : AppCompatActivity() {
             try {
                 val bundle = bundleOf()
                 bundle.putString("postId","$getPostId")
-                val intent = Intent(this,SponsorFormActivity::class.java)
+                val intent = Intent(this,DatePickActivity::class.java)
                 intent.putExtras(bundle)
                 startActivity(intent)
             }catch (e:Exception){

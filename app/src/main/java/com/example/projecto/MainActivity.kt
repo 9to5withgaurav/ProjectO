@@ -8,6 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
@@ -26,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        val fab = findViewById<FloatingActionButton>(R.id.fab)
         val sharedPref = getSharedPreferences("userID", Context.MODE_PRIVATE)
         val fetch = sharedPref.getString(KEY,null)
         Log.i(MAIN,"$fetch")
@@ -62,6 +63,16 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
 
         fetchRecycleViewThread()
+
+       fab.setOnClickListener {
+          try {
+              val intent = Intent(this,OrderCart::class.java)
+              startActivity(intent)
+          }catch (e:Exception){
+              e.printStackTrace()
+          }
+       }
+
     }
 
     private fun fetchRecycleViewThread(){
