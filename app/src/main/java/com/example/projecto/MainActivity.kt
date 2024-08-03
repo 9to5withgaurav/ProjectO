@@ -31,18 +31,6 @@ class MainActivity : AppCompatActivity() {
         val sharedPref = getSharedPreferences("userID", Context.MODE_PRIVATE)
         val fetch = sharedPref.getString(KEY,null)
         Log.i(MAIN,"$fetch")
-        if (fetch != null){
-            Toast.makeText(this,"Welcome",Toast.LENGTH_SHORT).show()
-        }else{
-            val intent = Intent(this,LoginActivity::class.java)
-            try {
-                startActivity(intent)
-            }catch (e:Exception){
-                e.printStackTrace()
-            }
-
-        }
-
         recyclerView = findViewById(R.id.recyecler)
         recyclerView.layoutManager = LinearLayoutManager(this@MainActivity)
         adapter = PostAdapter(dataSet = dataList, object : PostAdapter.OnItemCLickListener {
